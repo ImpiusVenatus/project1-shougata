@@ -22,7 +22,7 @@ const variants = {
 const Services = () => {
 
     const ref = useRef()
-    const isInView = useInView(ref,{margin: "-100px"})
+    const isInView = useInView(ref,{margin: "0px"})
 
   return (
     <motion.div className="services" 
@@ -44,7 +44,7 @@ const Services = () => {
                 <h1><motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas</h1> 
             </motion.div>
             <motion.div className="title">
-                <h1><motion.b while>For Your</motion.b> Business</h1> 
+                <h1><motion.b>For Your</motion.b> Business</h1> 
                 <button>WHAT WE DO?</button>   
             </motion.div>
             
