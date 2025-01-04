@@ -38,7 +38,7 @@ const Single  = ({item}) => {
         //offset: ["start start", "end start"]
     });
 
-    const y = useTransform(scrollYProgress,[0,1],[-200,100]);
+    const y = useTransform(scrollYProgress,[0,1],[-300,300]);
 
     return(
         <section>
