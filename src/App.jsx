@@ -5,9 +5,11 @@ import Parallax from "./Components/Parallax/Parallax";
 import Services from "./Components/Services/Services";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
+import Cursor from "./Components/Cursor/Cursor";
 
 const App = () => {
   return <div>
+    <Cursor />
     <section id="Homepage">
       <Navbar/>
       <Hero/>
@@ -23,7 +25,7 @@ const App = () => {
     <section id="Contact">
       <Contact />
     </section>
-   {/* <Test/> */}
+    
   </div>;
 };
 
