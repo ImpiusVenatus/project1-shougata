@@ -1,17 +1,30 @@
 import "./app.scss"
+import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
-import Test from "./Test";
+import Parallax from "./Components/Parallax/Parallax";
+import Services from "./Components/Services/Services";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Contact from "./Components/Contact/Contact";
+import Cursor from "./Components/Cursor/Cursor";
 
 const App = () => {
   return <div>
-    <section id="Homepage"><Navbar/></section>
-    <section id="Services">Parallax</section>
-    <section>Services</section>
-    <section id="Portfolio">Parallax</section>
-    <section>Portfolio1</section>
-    <section>Portfolio2</section>
-    <section>Portfolio3</section>
-    <section id="Contact">Contact</section>
+    <Cursor/>
+    <section id="Homepage">
+      <Navbar/>
+      <Hero/>
+    </section>
+    <section id="Services">
+      <Parallax type="services"/>
+    </section>
+    <section><Services /></section>
+    <section id="Portfolio">
+    <Parallax type= "portfolio"/>
+    </section>
+    <Portfolio />
+    <section id="Contact">
+      <Contact />
+    </section>
    {/* <Test/> */}
   </div>;
 };
